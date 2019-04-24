@@ -1,91 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8" ;
+@-webkit-viewport    {
+    -webkit-print-color-adjust: exact; width: device-width !important; }
+@-moz-viewport       {
+    -webkit-print-color-adjust: exact; width: device-width !important; }
+@-ms-viewport        {
+    -webkit-print-color-adjust: exact; width: device-width !important; }
+@-o-viewport         {
+    -webkit-print-color-adjust: exact; width: device-width !important; }
+@viewport            {
+    -webkit-print-color-adjust: exact; width: device-width !important; }
+
 body {
-  font-size: .95em;
-  -webkit-print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  font-family: 'Open Sans', Arial, Tahoma !important;
+  font-weight: 400 !important;
+  color: #363636 !important;
+  background: #334960 !important;
+}
+blockquote  {
+    -webkit-print-color-adjust: exact;
+  font-size: 1em !important;
 }
 
-a[href]:after {
-  content: none !important;
+.container {
+    -webkit-print-color-adjust: exact;
+  margin-top: 80px !important;
+  margin-bottom: 15px !important;
+  background: #fff !important;
 }
 
-#photo{
-  display: none;
+#photo-header {
+    -webkit-print-color-adjust: exact;
+  margin-top: -75px !important;
+}
+#photo {
+    -webkit-print-color-adjust: exact;
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  padding: 5px !important;
+  background: #334960 !important;
+  display: inline-block !important;
+}
+#photo img {
+    -webkit-print-color-adjust: exact;
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
+}
+#text-header h1 {
+    -webkit-print-color-adjust: exact;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: -1px !important;
+}
+#text-header h1::first-line {
+    -webkit-print-color-adjust: exact;
+  font-size: 1.5em !important;
+  font-weight: 800 !important;
+  line-height: 1.5em !important;
+}
+#text-header h1 span {
+    -webkit-print-color-adjust: exact;
+  color: #334960 !important;
+  opacity: 0.7 !important;
+}
+#text-header h1 sup {
+    -webkit-print-color-adjust: exact;
+  opacity: 0.5 !important;
+}
+#text-header:after {
+    -webkit-print-color-adjust: exact;
+  width: 100% !important;
+  height: 3px !important;
+  border-bottom: 1px solid #ddd !important;
+  margin-top: 15px !important;
+  content: '' !important;
+  display: block !important;
 }
 
 .box {
-  margin-bottom: -10px;
+    -webkit-print-color-adjust: exact;
+  padding-bottom: 10px !important;
+  margin-bottom: 25px !important;
+}
+.box h2 {
+    -webkit-print-color-adjust: exact;
+  color: #227c74 !important;
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
 }
 
-blockquote,
-#education,
 #awards,
-.contact-item,
-.publication,
-.skills,
-.interests {
-  page-break-inside: avoid;
-}
-
-.col-sm-5{
-  width: 40%;
-  padding: 0 15px;
-}
-
-.col-sm-7{
-  width: 60%;
-  padding: 0 15px;
-}
-
-.skills .col-sm-offset-1,
-.interests .col-sm-offset-1{
-  margin-top: -10px;
-  margin-bottom: 5px;
-}
-
 #education {
-  margin: 0;
-  margin-bottom: -20px;
+    -webkit-print-color-adjust: exact;
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+  position: relative !important;
+  padding: 1em 0 !important;
+  list-style: none !important;
 }
 #awards:before,
-#education:before {
-  background: none;
+#education:before  {
+    -webkit-print-color-adjust: exact;
+  width: 5px !important;
+  height: 100% !important;
+  position: absolute !important;
+  left: 35px !important;
+  top: 0 !important;
+  content: ' ' !important;
+  display: block !important;
+  background: #32475c !important;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%) !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff)) !important;
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%) !important;
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%) !important;
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%) !important;
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ) !important;
 }
-
+#awards li,
+#education li {
+    -webkit-print-color-adjust: exact;
+  width: 100% !important;
+  z-index: 2 !important;
+  position: relative !important;
+  float: left !important;
+}
+#awards .year,
+#education .year {
+    -webkit-print-color-adjust: exact;
+  width: 14% !important;
+  background: #fff !important;
+  padding: 10px !important;
+  font-weight: 700 !important;
+  display: inline-block !important;
+}
 #awards .description,
-#education .description,
-.job .details {
-  border: 1px solid #eee;
+#education .description {
+    -webkit-print-color-adjust: exact;
+  width: 83% !important;
+  display: inline-block !important;
+  background: #eee !important;
+  margin-bottom: 10px !important;
+  position: relative !important;
+  padding: 10px !important;
+  border-bottom: 1px solid #ccc !important;
+  border-right: 1px solid #ccc !important;
 }
-.publication,
-.publication .panel-heading,
-.publication .name{
-  margin: 0;
-  padding: 0 5px;
-  border: none;
+#awards .description:after,
+#education .description:after  {
+    -webkit-print-color-adjust: exact;
+  content: '' !important;
+  position: absolute !important;
+  top: 15px !important;
+  right: 0 !important;
+  left: -16px !important;
+  height: 0 !important;
+  width: 0 !important;
+  border: solid transparent !important;
+  border-right-color: #eee !important;
+  border-width: 8px !important;
+  pointer-events: none !important;
 }
-.publication .panel-body {
-  padding: 0 10px;
-  margin: 0;
+#awards .description h3,
+#education .description h3 {
+    -webkit-print-color-adjust: exact;
+  font-size: 1.2em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-weight: 700 !important;
+}
+#awards .description p,
+#education .description p {
+    -webkit-print-color-adjust: exact;
+  margin-top: 5px !important;
+  padding: 0 !important;
 }
 
-.badge {
-  margin: 0;
+.job {
+    -webkit-print-color-adjust: exact;
+  margin-bottom: 15px !important;
+}
+.job .details  {
+    -webkit-print-color-adjust: exact;
+  margin-left: 3% !important;
+  width: 95% !important;
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+  background: #eee !important;
+  border-bottom: 1px solid #ccc !important;
+  border-right: 1px solid #ccc !important;
+}
+.job .where {
+    -webkit-print-color-adjust: exact;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+}
+.job .year {
+    -webkit-print-color-adjust: exact;
+  opacity: 0.7 !important;
+}
+.job .profession {
+    -webkit-print-color-adjust: exact;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+}
+.job .description {
+    -webkit-print-color-adjust: exact;
+  line-height: 1.5em !important;
+}
+.job .highlights {
+    -webkit-print-color-adjust: exact;
+  padding: 5px 0 !important;
+  font-weight: bold !important;
+}
+.job .job-details  {
+    -webkit-print-color-adjust: exact;
+  padding-left: 5% !important;
+  width: 100% !important;
+}
+.publication  {
+    -webkit-print-color-adjust: exact;
+  margin-bottom: 0 !important;
+}
+.publication .name {
+    -webkit-print-color-adjust: exact;
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+.publication .year {
+    -webkit-print-color-adjust: exact;
+    opacity: 0.7 !important;
+}
+.publication p {
+    -webkit-print-color-adjust: exact;
+  margin: 0 !important;
+  padding-top: 10px !important;
 }
 
-.list-group-item{
-  border: none;
-  margin: 0;
-  padding: 5px 15px;
+.contact-item {
+    -webkit-print-color-adjust: exact;
+  width: 100% !important;
+  float: left !important;
 }
-.list-group-item:after{
-  content: '';
-  position: absolute;
-  top: 8px;
-  right: 0;
-  left: -1px;
-  height: 0;
-  width: 0;
-  border: solid transparent;
-  border-right-color: #999;
-  border-width: 4px;
-  pointer-events: none;
- }
+.contact-item .icon {
+    -webkit-print-color-adjust: exact;
+  padding: 10px !important;
+  border-right: 1px solid #ccc !important;
+  border-bottom: 1px solid #ccc !important;
+  color: #32475c !important;
+  background: #eee !important;
+}
+.contact-item:last-child .icon {
+    -webkit-print-color-adjust: exact;
+  border-bottom: none !important;
+}
+.contact-item .title {
+    -webkit-print-color-adjust: exact;
+  width: 80% !important;
+  width: calc(100% - 55px) !important;
+  font-weight: 700 !important;
+  opacity: 0.9 !important;
+}
+.contact-item .title.only {
+    -webkit-print-color-adjust: exact;
+  margin-top: 10px !important;
+}
+.contact-item .description {
+    -webkit-print-color-adjust: exact;
+  width: 80% !important;
+  width: calc(100% - 55px) !important;
+  color: #334960 !important;
+}
+
+.item-interests,
+.item-skills {
+    -webkit-print-color-adjust: exact;
+  height: 30px !important;
+  color: #334960 !important;
+  padding: 5px 10px !important;
+  margin-bottom: 5px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
+}
+.interest,
+.skill {
+    -webkit-print-color-adjust: exact;
+  color: #fff !important;
+  display: inline-block !important;
+  margin-right: 5px !important;
+  margin-bottom: 5px !important;
+  padding: 5px 10px !important;
+  background: #32475c !important;
+  position: relative !important;
+  font-size: .85em !important;
+}
+.skill-level  {
+    -webkit-print-color-adjust: exact;
+  background-color: #227c74 !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+  padding: 1px 8px !important;
+  font-size: .75em !important;
+  position: absolute !important;
+  margin: 1px 10px !important;
+}
+
+#language-skills .skill {
+    -webkit-print-color-adjust: exact;
+  margin: 10px 0 !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid #eee !important;
+}
